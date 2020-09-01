@@ -1,0 +1,40 @@
+{% set name = "bloptools" %}
+{% set version = "0.0.1" %}
+{% set sha256 = "d8eb122b3eaacfacb06978deaf084acd552958fdc9dea6b786d981d81d67cf57" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - bluesky >=1.6.1
+    - databroker
+    - matplotlib
+    - numpy
+    - ophyd
+    - sirepo-bluesky
+
+test:
+  imports:
+    - bloptools
+
+about:
+  home: https://github.com/NSLS-II/bloptools
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Beamline Optimization Tools
