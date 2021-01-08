@@ -5,11 +5,9 @@ Home: https://github.com/NSLS-II/bloptools
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/bloptools-feedstock/blob/master/LICENSE.txt)
 
 Summary: Beamline Optimization Tools
-
-
 
 Current build status
 ====================
