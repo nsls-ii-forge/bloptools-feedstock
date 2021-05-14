@@ -1,6 +1,6 @@
 {% set name = "bloptools" %}
-{% set version = "0.0.1" %}
-{% set sha256 = "d8eb122b3eaacfacb06978deaf084acd552958fdc9dea6b786d981d81d67cf57" %}
+{% set version = "0.0.2" %}
+{% set sha256 = "98ab096b2719c96918314759a2edbf27c811bc7a0ae5a33de7cfd6e5ddb59d98" %}
 
 package:
   name: {{ name|lower }}
